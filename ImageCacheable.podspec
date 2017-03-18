@@ -1,42 +1,18 @@
-#
-# Be sure to run `pod lib lint ImageCacheable.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'ImageCacheable'
   s.version          = '0.1.0'
   s.summary          = 'Swift protocol to save images locally or cache in memory'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
 Swift protocol to allow any object to easily save & retrieve a UIImage from local storage or in memory cache.
                        DESC
 
   s.homepage         = 'https://github.com/ssh88/ImageCacheable'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ssh88' => 'shabeershussain@gmail.com' }
+  s.author           = { 'Shabeer Hussain' => 'shabeershussain@gmail.com' }
   s.source           = { :git => 'https://github.com/ssh88/ImageCacheable.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/sshdeveloper'
 
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'ImageCacheable/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ImageCacheable' => ['ImageCacheable/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
