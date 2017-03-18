@@ -21,19 +21,20 @@ protocol ImageCacheable {
     func inMemoryImage(forKey key: String, from url: URL, completion:@escaping ((UIImage?, String) -> Void))
     
     /**
-     Folder name needs to be initialized by dedicated cache object if using local file storage
+     Folder name. Defaults to "ImageCacheable" unless dedicated cache object declares new name
      */
     var imageFolderName: String? {get}
     
     /**
-     Cache object to be initialized by the conforming object if using in-memory storage
+     Cache object, only initialized by the conforming object if calling
+     inMemoryImage(forKey:from:completion:)
      */
     var inMemoryImageCache: NSCache<AnyObject, UIImage>? {get}
 }
 
 extension ImageCacheable {
     
-    //set both properties to nil so they are optional to implement by the conforming object
+    //both properties have default values initialized on get
     var imageFolderName: String? { return "ImageCacheable" }
     var inMemoryImageCache:  NSCache<AnyObject, UIImage>? { return NSCache<AnyObject, UIImage>() }
     
