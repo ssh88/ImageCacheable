@@ -5,11 +5,43 @@
 [![License](https://img.shields.io/cocoapods/l/ImageCacheable.svg?style=flat)](http://cocoapods.org/pods/ImageCacheable)
 [![Platform](https://img.shields.io/cocoapods/p/ImageCacheable.svg?style=flat)](http://cocoapods.org/pods/ImageCacheable)
 
-## Example
+### Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+First conform to the protocol
+
+```
+struct MyObject: ImageCacheable {
+```
+
+To use the in-memory cache call:
+
+```
+inMemoryImage(forKey: "uniqueImageID", from: imageURL) { (image, key) in
+
+}
+```
+If the image does not already exist, it will download the image from the specified url, and store it a a Swift Cache, but wont persist across sessions. 
+
+
+Alternatively you can persist images to disk and across sessions by calling:
+
+```
+localImage(forKey: "uniqueImageID", from: imageURL) { (image, key) in
+
+}
+```
+To clear the cache, call either of the following functions, depending on if your using the in-memory cache or local file storage
+
+```
+clearInMemoryCache(success: (Bool) -> Void)
+clearLocalCache(success: (Bool) -> Void)
+```
 
 ## Requirements
+
+- iOS 9.0+
+- Swift 3
+- Xcode 8
 
 ## Installation
 

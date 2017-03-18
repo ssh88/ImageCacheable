@@ -1,0 +1,16 @@
+PODS:
+  - ImageCacheable (0.1.0)
+
+DEPENDENCIES:
+  - ImageCacheable (from `../`)
+
+EXTERNAL SOURCES:
+  ImageCacheable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ImageCacheable: 5fa42c271cd5237f0aa4e8d1e482894487c138eb
+
+PODFILE CHECKSUM: 807c83aef0d11b304c25cc3115f8d228be454b3c
+
+COCOAPODS: 1.2.0
