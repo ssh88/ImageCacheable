@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ImageCacheable_Example' do
+  pod 'ImageCacheable', :path => '../'
+
+  target 'ImageCacheable_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
