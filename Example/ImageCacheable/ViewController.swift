@@ -9,7 +9,7 @@
 import UIKit
 import ImageCacheable
 
-class ViewController: UIViewController, ImageCacheable {
+class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
 

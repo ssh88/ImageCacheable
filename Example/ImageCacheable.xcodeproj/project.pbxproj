@@ -16,6 +16,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6749936FA8DE82DB46623882 /* Pods_ImageCacheable_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3538B3BAC77F53BB307BBF4D /* Pods_ImageCacheable_Tests.framework */; };
 		7EB2A8511E7CB3E1009D8003 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 7EB2A8501E7CB3E1009D8003 /* .swift-version */; };
+		7EB2A8531E7CBEB5009D8003 /* ImageCacheableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB2A8521E7CBEB5009D8003 /* ImageCacheableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		70B90E9AC08AF227B43E7BE0 /* Pods_ImageCacheable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCacheable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB018E56599E364EC3A10D7 /* Pods-ImageCacheable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCacheable_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageCacheable_Tests/Pods-ImageCacheable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EB2A8501E7CB3E1009D8003 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ".swift-version"; path = "../.swift-version"; sourceTree = "<group>"; };
+		7EB2A8521E7CBEB5009D8003 /* ImageCacheableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheableTests.swift; sourceTree = "<group>"; };
 		86FF2C0CF5731623750956C6 /* Pods-ImageCacheable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCacheable_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageCacheable_Tests/Pods-ImageCacheable_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C4F5F1004C9A6B29DCA24E1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D5C7CF862A6157A5973DF26C /* ImageCacheable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ImageCacheable.podspec; path = ../ImageCacheable.podspec; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7EB2A8521E7CBEB5009D8003 /* ImageCacheableTests.swift */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -367,6 +370,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				7EB2A8531E7CBEB5009D8003 /* ImageCacheableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
